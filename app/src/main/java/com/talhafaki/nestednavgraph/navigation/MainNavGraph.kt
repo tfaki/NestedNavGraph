@@ -1,23 +1,26 @@
 package com.talhafaki.nestednavgraph.navigation
 
-import androidx.compose.runtime.Composable
+import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.navigation
+import com.talhafaki.nestednavgraph.ui.screen.MainScreen
 
 /**
-* Created by talhafaki on 4.06.2022.
-*/
+ * Created by talhafaki on 4.06.2022.
+ */
 
-@Composable
-fun MainNavGraph(
+fun NavGraphBuilder.mainNavGraph(
     navController: NavHostController
 ) {
-    NavHost(
-        navController = navController,
-        startDestination = AUTH_GRAPH_ROUTE,
+    navigation(
+        startDestination = Screen.Main.route,
         route = MAIN_GRAPH_ROUTE
     ) {
-        homeNavGraph(navController = navController)
-        authNavGraph(navController = navController)
+        composable(
+            route = Screen.Main.route
+        ) {
+            MainScreen(rootNavController = navController)
+        }
     }
 }

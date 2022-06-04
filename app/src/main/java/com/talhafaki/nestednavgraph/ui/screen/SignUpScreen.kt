@@ -59,7 +59,7 @@ fun SignUpScreen(
                 .clickable {
                     navigateToHome.invoke()
                 },
-            text = "Go to Home",
+            text = "Go to Main",
             style = MaterialTheme.typography.h3.copy(
                 color = Color.Red,
                 fontWeight = FontWeight.Medium,

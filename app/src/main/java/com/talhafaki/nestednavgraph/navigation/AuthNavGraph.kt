@@ -22,7 +22,7 @@ fun NavGraphBuilder.authNavGraph(
         ) {
             LoginScreen(
                 navigateToHome = {
-                    navController.navigate(Screen.Home.route)
+                    navController.navigate(Screen.Main.route)
                 },
                 navigateToSignUp = {
                     navController.navigate(Screen.SignUp.route)
@@ -37,7 +37,7 @@ fun NavGraphBuilder.authNavGraph(
                     navController.navigate(Screen.Login.route)
                 },
                 navigateToHome = {
-                    navController.navigate(Screen.Home.route)
+                    navController.navigate(Screen.Main.route)
                 }
             )
         }

@@ -28,7 +28,7 @@ fun HomeScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentWidth(Alignment.CenterHorizontally),
-            text = "Home",
+            text = "Home Screen",
             style = MaterialTheme.typography.h3.copy(
                 color = Color.Black,
                 fontWeight = FontWeight.Bold,
